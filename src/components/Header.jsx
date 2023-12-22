@@ -1,17 +1,20 @@
+import { useState } from "react";
 import logo from "../assets/logo.png";
 
 export default function Header() {
+  const [isShowing, setIsShowing] = useState(false);
+
   return (
     <div className="header">
       <div className="container">
         <img className="logo" src={logo} alt="logo" />
-        <div className="links">
+        <div className="links" onClick={() => setIsShowing(!isShowing)}>
           <span className="icon">
             <span></span>
             <span></span>
             <span></span>
           </span>
-          <ul>
+          <ul style={{ display: isShowing ? "block" : "none" }}>
             <li>
               <a href="#services">Services</a>
             </li>
@@ -20,10 +23,10 @@ export default function Header() {
             </li>
 
             <li>
-              <a href="#About">About</a>
+              <a href="#about">About</a>
             </li>
             <li>
-              <a href="#ontact">Contact</a>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </div>

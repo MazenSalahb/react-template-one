@@ -4,7 +4,7 @@ import serviceImg from "../assets/services.jpg";
 
 export default function Services() {
   return (
-    <div className="services">
+    <div className="services" id="services">
       <div className="container">
         <SpecialHeading
           title="Services"

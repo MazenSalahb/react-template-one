@@ -9,6 +9,10 @@
 
 /* END Global Rules */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Work Sans", sans-serif;
 }
