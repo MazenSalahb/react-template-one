@@ -123,6 +123,16 @@
   top: calc(100% + 15px);
   z-index: 1;
   display: none;
+  animation: topDown 0.2s ease-in-out;
+}
+
+@keyframes topDown {
+  from {
+    top: calc(100% - 105px);
+  }
+  to {
+    top: calc(100% + 15px);
+  }
 }
 
 .header .links ul::before {
